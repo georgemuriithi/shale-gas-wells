@@ -13,8 +13,6 @@ A combination of **LightGBM Regressor** and **Exponential smoothing** was used t
 - **trainSet.csv** - Data of 280 shale gas wells for training models
 - **examSet.csv** - Data of 44 shale gas wells for prediction
 
-The wells are divided into **new wells** and **old wells**. New wells do not have data on gas production per month, non-gas production per month and hours operated per month. This data is available in old wells.
-
 ### Predicting gas production
 Predict the monthly average gas productions of 44 shale gas wells given in **examSet.csv** for the next 6 months.
 
@@ -42,7 +40,9 @@ Suppose that a budget of $15,000,000 is given. Purchase gas wells among the 44 c
 - X<sub>i</sub> - decision variable to purchase the i<sup>th</sup> gas well (If purchasing the i<sup>th</sup> gas well: X<sub>i</sub> = 1, if not: X<sub>i</sub> = 0)
 
 ## Solution approach
-Because of the way the wells are divided into **new wells** and **old wells,** **regression** was used to predit the monthly average productions of new wells for the first 6 months and **exponential smoothing** was used to predict the monthly average productions of old wells for the last 6 months.
+The wells are divided into **new wells** and **old wells**. New wells do not have data on gas production per month, non-gas production per month and hours operated per month. This data is available in old wells.
+
+Therefore, **regression** was used to predit the monthly average productions of new wells for the first 6 months and **exponential smoothing** was used to predict the monthly average productions of old wells for the last 6 months.
 
 The following **advanced decision tree-based models** were tested for regression:
 
