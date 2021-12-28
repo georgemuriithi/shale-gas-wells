@@ -20,7 +20,9 @@ Predict the monthly average gas productions of 44 shale gas wells given in **exa
 
 Evaluation will be based on **sMAPE(symmetric mean absolute percentage error):**
 
-![image](https://user-images.githubusercontent.com/21691211/147583636-ae727003-1b91-4e18-b751-4f19e1324ba8.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/21691211/147583636-ae727003-1b91-4e18-b751-4f19e1324ba8.png">
+</p>
 
 - F<sub>i</sub> - predicted monthly average gas production of the i<sup>th</sup> gas well over the next 6 months
 - A<sub>i</sub> - actual monthly average gas production of the i<sup>th</sup> gas well over the next 6 months
@@ -29,7 +31,9 @@ Evaluation will be based on **sMAPE(symmetric mean absolute percentage error):**
 ### Investment decision
 Suppose that a budget of $15,000,000 is given. Purchase gas wells among the 44 candidates given in **examSet.csv** to maximize profit.
 
-![image](https://user-images.githubusercontent.com/21691211/147584383-1280418f-ef95-4970-9df6-b0a834f99bcc.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/21691211/147584383-1280418f-ef95-4970-9df6-b0a834f99bcc.png">
+</p>
 
 - A<sub>i</sub> - actual monthly average gas production of the i<sup>th</sup> gas well over the next 6 months
 - P<sub>i</sub> - price of the i<sup>th</sup> gas well
