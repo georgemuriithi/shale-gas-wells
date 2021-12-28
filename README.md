@@ -1,9 +1,9 @@
 # The 1<sup>st</sup> KAIST-POSTECH-UNIST Data Science Contest
 https://www.datascience-contest.com
 
-The Korea National Oil Corporation was interested in purchasing shale gas wells from the United States of America, and needed to predict their productions in order to select the wells that maximize profit.
+The Korea National Oil Corporation is interested in purchasing shale gas wells from the United States of America, and needs to predict their productions in order to select the wells that maximize profit.
 
-A combination of **LightGBM Regressor** and **Exponential smoothing** was used to predict the productions and Integer programming using **Gurobi** was used for optimization to maximize profit. Evaluation was based on **sMAPE (symmetric mean absolute percentage error).** Our team was ranked among the best with a percentage error of **25.54%.** The best team had a percentage error of **19.49%.**
+A combination of **LightGBM Regressor** and **Exponential smoothing** is used to predict the productions and Integer programming using **Gurobi** is used for optimization to maximize profit. Evaluation is based on **sMAPE (symmetric mean absolute percentage error).** Our team ranked among the best with a percentage error of **25.54%.** The best team had a percentage error of **19.49%.**
 
 ## Problem description
 ### Data
@@ -42,9 +42,9 @@ Suppose that a budget of $15,000,000 is given. Purchase gas wells among the 44 c
 ## Solution approach
 The wells are divided into **new wells** and **old wells**. New wells do not have data on gas production per month, non-gas production per month and hours operated per month. This data is available in old wells.
 
-Therefore, **regression** was used to predit the monthly average productions of new wells for the first 6 months and **exponential smoothing** was used to predict the monthly average productions of old wells for the last 6 months.
+Therefore, **regression** is used to predit the monthly average productions of new wells for the first 6 months and **exponential smoothing** is used to predict the monthly average productions of old wells for the last 6 months.
 
-The following **advanced decision tree-based models** were tested for regression:
+The following **advanced decision tree-based models** are tested for regression:
 
 - `BaggingRegressor`
 - `RandomForestRegressor`
@@ -52,4 +52,4 @@ The following **advanced decision tree-based models** were tested for regression
 - `LGBMRegressor`
 - `VotingRegressor`
 
-`LGBMRegressor` turned out as the best performing.
+`LGBMRegressor` turns out as the best performing.
