@@ -16,7 +16,7 @@ A combination of **LightGBM Regressor** and **Exponential smoothing** is used to
 ### Predicting gas production
 Predict the monthly average gas productions of 44 shale gas wells given in **examSet.csv** for the next 6 months.
 
-Evaluation will be based on **sMAPE(symmetric mean absolute percentage error):**
+Evaluation will be based on **sMAPE (symmetric mean absolute percentage error):**
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/21691211/147583636-ae727003-1b91-4e18-b751-4f19e1324ba8.png">
@@ -42,19 +42,37 @@ Suppose that a budget of $15,000,000 is given. Purchase gas wells among the 44 c
 ## Solution approach
 The wells are divided into **new wells** and **old wells**. New wells do not have data on gas production per month, non-gas production per month and hours operated per month. This data is available in old wells.
 
-Therefore, **regression** is used to predit the monthly average productions of new wells for the first 6 months and **exponential smoothing** is used to predict the monthly average productions of old wells for the last 6 months.
+Therefore, **regression** is used to predit the monthly average productions of **new wells for the first 6 months** and **exponential smoothing** is used to predict the monthly average productions of **old wells for the last 6 months.**
 
 The following **advanced decision tree-based models** are tested for regression:
 
 - `BaggingRegressor`
-   - `n_estimators=50`
+  - `n_estimators=50`
 - `RandomForestRegressor`
-   - `n_estimators=50`
+  - `n_estimators=50`
 - `XGBRegressor`
-   - `max_depth=5`
-   - `objective='reg:squarederror'`
+  - `max_depth=5`
+  - `objective='reg:squarederror'`
 - `LGBMRegressor`
 - `VotingRegressor`
-   - `estimators=[bagging, random_forest, xgb, lgbm]`
+  - `estimators=[bagging, random_forest, xgb, lgbm]`
 
-`LGBMRegressor` turns out as the best performing.
+`LGBMRegressor` turns out as the best performing, with the minimum **sMAPE**.
+
+The following **exponential smoothing models** are used:
+
+- `SimpleExpSmoothing`
+  - `smoothing_level=0.2`
+  - `smoothing_level=0.6`
+  - optimized smoothing level
+- `Holt`
+  - Additive model
+  - Multiplicative model
+  - Damped additive model
+  - Damped multiplicative model
+- `ExponentialSmoothing`
+  - `use_boxcox=True`
+    - Additive model
+    - Damped additive model
+
+Depending on the model with the minimum **SSE (sum of squared error)** for each well, different models are used to forecast different wells.
