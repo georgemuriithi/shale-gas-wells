@@ -44,6 +44,7 @@ The wells are divided into **new wells** and **old wells**. New wells do not hav
 
 Therefore, **regression** is used to predit the monthly average productions of **new wells for the first 6 months** and **exponential smoothing** is used to predict the monthly average productions of **old wells for the last 6 months.**
 
+### New wells
 For regression, the following **advanced decision tree-based models** are tested:
 
 - `BaggingRegressor`
@@ -59,6 +60,7 @@ For regression, the following **advanced decision tree-based models** are tested
 
 `LGBMRegressor` turns out as the best performing, with the minimum **sMAPE**.
 
+### Old wells
 The following **exponential smoothing models** are used:
 
 - `SimpleExpSmoothing`
