@@ -47,9 +47,14 @@ Therefore, **regression** is used to predit the monthly average productions of n
 The following **advanced decision tree-based models** are tested for regression:
 
 - `BaggingRegressor`
+   - `n_estimators=50`
 - `RandomForestRegressor`
+   - `n_estimators=50`
 - `XGBRegressor`
+   - `max_depth=5`
+   - `objective='reg:squarederror'`
 - `LGBMRegressor`
 - `VotingRegressor`
+   - `estimators=[bagging, random_forest, xgb, lgbm]`
 
 `LGBMRegressor` turns out as the best performing.
