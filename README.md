@@ -1,6 +1,12 @@
 # The 1<sup>st</sup> KAIST-POSTECH-UNIST Data Science Contest
 https://www.datascience-contest.com
 
+<p align="left">
+    <a href="https://github.com/georgemuriithi/KAIST-POSTECH-UNIST-data-science-contest/blob/main/LICENSE">
+        <img alt="License" src="https://img.shields.io/github/license/georgemuriithi/KAIST-POSTECH-UNIST-data-science-contest.svg?color=blue&cachedrop">
+    </a>
+</p>
+
 The Korea National Oil Corporation is interested in purchasing shale gas wells from the United States of America, and needs to predict their productions in order to select the wells that maximize profit.
 
 A combination of **LightGBM Regressor** and **Exponential smoothing** is used to predict the productions and Integer programming using **Gurobi** is used for optimization to maximize profit. Evaluation is based on **sMAPE (symmetric mean absolute percentage error).** Our team ranked among the best with a percentage error of **25.54%.** The best team had a percentage error of **19.49%.**
