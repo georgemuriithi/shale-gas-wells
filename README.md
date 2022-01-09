@@ -2,8 +2,8 @@
 https://www.datascience-contest.com
 
 <p align="left">
-    <a href="https://github.com/georgemuriithi/KAIST-POSTECH-UNIST-data-science-contest/blob/main/LICENSE">
-        <img alt="License" src="https://img.shields.io/github/license/georgemuriithi/KAIST-POSTECH-UNIST-data-science-contest.svg?color=blue&cachedrop">
+    <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/LICENSE">
+        <img alt="License" src="https://img.shields.io/github/license/georgemuriithi/shale-gas-wells.svg?color=blue&cachedrop">
     </a>
 </p>
 
