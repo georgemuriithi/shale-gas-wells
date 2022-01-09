@@ -25,7 +25,7 @@ Predict the monthly average gas productions of 44 shale gas wells given in **exa
 Evaluation will be based on **sMAPE (symmetric mean absolute percentage error):**
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/21691211/147583636-ae727003-1b91-4e18-b751-4f19e1324ba8.png">
+  <img src="https://user-images.githubusercontent.com/21691211/148675936-b3f0def1-44fa-4d76-a9b4-05bc79049fca.png">
 </p>
 
 - F<sub>i</sub> - predicted monthly average gas production of the i<sup>th</sup> gas well over the next 6 months
@@ -36,13 +36,13 @@ Evaluation will be based on **sMAPE (symmetric mean absolute percentage error):*
 Suppose that a budget of $15,000,000 is given. Purchase gas wells among the 44 candidates given in **examSet.csv** to maximize profit.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/21691211/147584383-1280418f-ef95-4970-9df6-b0a834f99bcc.png">
+  <img src="https://user-images.githubusercontent.com/21691211/148675948-b08621d8-68cf-4fa3-82a5-467c3b973347.png">
 </p>
 
 - A<sub>i</sub> - actual monthly average gas production of the i<sup>th</sup> gas well over the next 6 months
 - P<sub>i</sub> - price of the i<sup>th</sup> gas well
 - P<sub>s</sub> - shale gas price ($5 per 1 Mcf)
-- C<sub>i</sub> - operation cost of the i<sup>th</sup> gas well
+- C<sub>i</sub> - monthly operation cost of the i<sup>th</sup> gas well
 - X<sub>i</sub> - decision variable to purchase the i<sup>th</sup> gas well (If purchasing the i<sup>th</sup> gas well: X<sub>i</sub> = 1, if not: X<sub>i</sub> = 0)
 
 ## Solution approach
