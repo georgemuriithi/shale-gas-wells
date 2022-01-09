@@ -1,4 +1,4 @@
-# Shale Gas Wells Productions Prediction
+# Shale Gas Wells Production Prediction
 https://www.datascience-contest.com
 
 <p align="left">
