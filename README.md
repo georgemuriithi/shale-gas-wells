@@ -1,4 +1,4 @@
-# The 1<sup>st</sup> KAIST-POSTECH-UNIST Data Science Contest
+# Shale Gas Wells Productions Prediction
 https://www.datascience-contest.com
 
 <p align="left">
