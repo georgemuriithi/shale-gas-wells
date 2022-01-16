@@ -1,11 +1,9 @@
 # Shale Gas Wells Production Prediction
 https://www.datascience-contest.com
 
-<p align="left">
-    <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/LICENSE">
-        <img alt="License" src="https://img.shields.io/github/license/georgemuriithi/shale-gas-wells.svg?color=blue&cachedrop">
-    </a>
-</p>
+<a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/georgemuriithi/shale-gas-wells.svg?color=blue&cachedrop">
+</a>
 
 The Korea National Oil Corporation is interested in purchasing shale gas wells from the United States of America, and needs to predict their productions in order to select the wells that maximize profit.
 
