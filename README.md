@@ -33,6 +33,10 @@ Evaluation will be based on **sMAPE (symmetric mean absolute percentage error):*
 - n - number of gas wells (44 in this problem)
 
 ### Investment decision
+<a href="https://colab.research.google.com/drive/1aFY-WH7U4QJpItl5yXOoEvJC0_t06hDn?usp=sharing">
+    <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
+</a>
+
 Suppose that a budget of $15,000,000 is given. Purchase gas wells among the 44 candidates given in **examSet.csv** to maximize profit.
 
 <p align="center">
@@ -51,6 +55,10 @@ The wells are divided into **new wells** and **old wells**. New wells do not hav
 Therefore, **regression** is used to predit the monthly average productions of **new wells for the first 6 months** and **exponential smoothing** is used to predict the monthly average productions of **old wells for the last 6 months.**
 
 ### New wells
+<a href="https://colab.research.google.com/drive/1wg5sLr3LeWGhc4oeIqkiocIT4FMsgHwF?usp=sharing">
+    <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
+</a>
+
 For regression, the following **advanced decision tree-based models** are tested:
 
 - `BaggingRegressor`
@@ -67,6 +75,10 @@ For regression, the following **advanced decision tree-based models** are tested
 `LGBMRegressor` turns out as the best performing, with the minimum **sMAPE**.
 
 ### Old wells
+<a href="https://colab.research.google.com/drive/1ytvFCquYvnic6fqAoLBGuLcIPTSMg3Eq?usp=sharing">
+    <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
+</a>
+
 The following **exponential smoothing models** are used:
 
 - `SimpleExpSmoothing`
