@@ -70,6 +70,9 @@ For regression, the following **advanced decision tree-based models** are tested
 - `VotingRegressor`
   - `estimators=[bagging, random_forest, xgb, lgbm]`
 
+Hyperparameter:
+`train_test_split(test_size=0.2, random_state=42)`
+
 `LGBMRegressor` turns out as the best performing, with the minimum **sMAPE**.
 
 ### Old wells
