@@ -7,7 +7,7 @@ https://www.datascience-contest.com
 
 The Korea National Oil Corporation is interested in purchasing shale gas wells from the United States of America, and needs to predict their productions in order to select the wells that maximize profit.
 
-A combination of **LightGBM Regressor** and **Exponential smoothing** is used to predict the productions and Integer programming using **Gurobi** is used for optimization to maximize profit. Evaluation is based on **sMAPE (symmetric mean absolute percentage error).** Our team had one of the best percentage errors. We had a percentage error of **25.54%,** compared to the best one of **19.49%.**
+A combination of **LightGBM Regressor** and **Exponential smoothing** is used to predict the productions and Integer programming using **Gurobi** is used for optimization to maximize profit. Evaluation is based on **sMAPE (symmetric mean absolute percentage error).** My team had one of the best performances, having a percentage error of **25.54%,** compared to the best one of **19.49%.**
 
 ## Problem description
 ### Data
