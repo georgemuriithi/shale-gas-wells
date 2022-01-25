@@ -57,7 +57,7 @@ Therefore, **regression** is used to predit the monthly average productions of *
     <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
 
-The following **advanced decision tree-based models** for regression are tested:
+After **Feature engineering** and **EDA (Exploratory Data Analysis),** the following **advanced decision tree-based models** for regression are tested:
 
 - `BaggingRegressor`
   - `n_estimators=50`
@@ -70,7 +70,7 @@ The following **advanced decision tree-based models** for regression are tested:
 - `VotingRegressor`
   - `estimators=[bagging, random_forest, xgb, lgbm]`
 
-Hyperparameter: `train_test_split(test_size=0.2, random_state=42)`
+**Hyperparameter:** `train_test_split(test_size=0.2, random_state=42)`
 
 `LGBMRegressor` turns out as the best performing, with the minimum **sMAPE**.
 
