@@ -75,7 +75,7 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
 **Hyperparameters:**
 
 - `train_test_split(test_size=0.2, random_state=42)`
-- `LGBMRegressor`: (hyperparameter tuning done using **Ray Tune**)
+- `LGBMRegressor`: (hyperparameter tuning done with **Ray Tune** using Grid Search)
   - `learning_rate=0.1`
   - `max_bin=250`
   - `max_depth=-1`
