@@ -70,9 +70,18 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
 - `VotingRegressor`
   - `estimators=[bagging, random_forest, xgb, lgbm]`
 
-**Hyperparameter:** `train_test_split(test_size=0.2, random_state=42)`
-
 `LGBMRegressor` turns out as the best performing, with the minimum **sMAPE**.
+
+**Hyperparameters:**
+
+- `train_test_split(test_size=0.2, random_state=42)`
+- `LGBMRegressor`: (hyperparameter tuning done using **Ray Tune**)
+  - `learning_rate=0.1`
+  - `max_bin=250`
+  - `max_depth=-1`
+  - `min_data_in_leaf=20`
+  - `num_iterations=100`
+  - `num_leaves=20`
 
 ### Old wells
 <a href="https://colab.research.google.com/drive/1ytvFCquYvnic6fqAoLBGuLcIPTSMg3Eq?usp=sharing">
