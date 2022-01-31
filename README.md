@@ -69,6 +69,7 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
 - `LGBMRegressor`
 - `VotingRegressor`
   - `estimators=[bagging, random_forest, xgb, lgbm]`
+  - `n_jobs=-1`
 
 `LGBMRegressor` turns out as the best performing, with the minimum **sMAPE**.
 
