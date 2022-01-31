@@ -79,7 +79,7 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
     <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
 
-The following **exponential smoothing models** are used:
+The following **exponential smoothing models** are tested:
 
 - `SimpleExpSmoothing`
   - `smoothing_level=0.2`
