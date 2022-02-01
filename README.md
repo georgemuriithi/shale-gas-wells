@@ -48,7 +48,7 @@ Suppose that a budget of $15,000,000 is given. Purchase gas wells among the 44 c
 - X<sub>i</sub> - decision variable to purchase the i<sup>th</sup> gas well (If purchasing the i<sup>th</sup> gas well: X<sub>i</sub> = 1, if not: X<sub>i</sub> = 0)
 
 ## Solution approach
-The wells are divided into **new wells** and **old wells**. New wells do not have data on gas production per month, non-gas production per month and hours operated per month. This data is available in old wells.
+The wells are divided into **new wells** and **old wells.** New wells do not have data on gas production per month, non-gas production per month and hours operated per month. This data is available in old wells.
 
 Therefore, **regression** is used to predit the monthly average productions of **new wells for the first 6 months** and **exponential smoothing** is used to predict the monthly average productions of **old wells for the last 6 months.**
 
@@ -71,18 +71,19 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
   - `estimators=[bagging, random_forest, xgb, lgbm]`
   - `n_jobs=-1`
 
-`LGBMRegressor` turns out as the best performing, with the minimum **sMAPE**.
+**Hyperparameter:** `train_test_split(test_size=0.2, random_state=42)`
 
-**Hyperparameters:**
+`LGBMRegressor` turns out as the best performing, with the minimum **sMAPE.**
 
-- `train_test_split(test_size=0.2, random_state=42)`
-- `LGBMRegressor`: (hyperparameter tuning done with **Ray Tune** using Grid Search)
-  - `learning_rate=0.1`
-  - `max_bin=250`
-  - `max_depth=-1`
-  - `min_data_in_leaf=20`
-  - `num_iterations=100`
-  - `num_leaves=20`
+`LGBMRegressor` **hyperparameters** after tuning with **Ray Tune** using Grid Search Algorithm: *(Resources leveraged from **Google Colab:** 2 CPUs, 1 GPU)*
+
+- `boosting_type='gbdt'`
+- `learning_rate=0.1`
+- `max_bin=250`
+- `max_depth=-1`
+- `min_data_in_leaf=20`
+- `num_iterations=100`
+- `num_leaves=20`
 
 ### Old wells
 <a href="https://colab.research.google.com/drive/1ytvFCquYvnic6fqAoLBGuLcIPTSMg3Eq?usp=sharing">
