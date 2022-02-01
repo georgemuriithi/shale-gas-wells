@@ -75,7 +75,9 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
 
 `LGBMRegressor` turns out as the best performing, with the minimum **sMAPE.**
 
-`LGBMRegressor` **hyperparameters** after tuning with **Ray Tune** using Grid Search Algorithm: *(Resources leveraged from **Google Colab:** 2 CPUs, 1 GPU)*
+`LGBMRegressor` **hyperparameters** after tuning with **Ray Tune** using Grid Search Algorithm:
+
+*(Resources leveraged from **Google Colab:** 2 CPUs, 1 GPU)*
 
 - `boosting_type='gbdt'`
 - `learning_rate=0.1`
