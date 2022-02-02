@@ -9,7 +9,7 @@ The Korea National Oil Corporation is interested in purchasing shale gas wells f
 
 A combination of **LightGBM regression** and **Exponential smoothing** is used to predict the productions and Integer programming using **Gurobi** is used for optimization to maximize profit. Performance evaluation is based on **sMAPE (symmetric Mean Absolute Percentage Error).** My team had one of the best performances, having a percentage error of **25.54%,** compared to the best one of **19.49%.**
 
-## Problem description
+## Problem Description
 ### Data
 
 *Unfortunately, the train and exam datasets are confidential and therefore, will not be provided in this repository.*
@@ -17,7 +17,7 @@ A combination of **LightGBM regression** and **Exponential smoothing** is used t
 - **trainSet.csv** - Data of 280 shale gas wells for training models
 - **examSet.csv** - Data of 44 shale gas wells for prediction
 
-### Predicting gas production
+### Predicting Gas Production
 Predict the monthly average gas productions of 44 shale gas wells given in **examSet.csv** for the next 6 months.
 
 Performance evaluation will be based on **sMAPE (symmetric Mean Absolute Percentage Error):**
@@ -30,7 +30,7 @@ Performance evaluation will be based on **sMAPE (symmetric Mean Absolute Percent
 - A<sub>i</sub> - actual monthly average gas production of the i<sup>th</sup> gas well over the next 6 months
 - n - number of gas wells (44 in this problem)
 
-### Investment decision
+### <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/Investment-Decision.ipynb">Investment Decision</a>
 <a href="https://colab.research.google.com/drive/1aFY-WH7U4QJpItl5yXOoEvJC0_t06hDn?usp=sharing">
     <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
@@ -47,12 +47,12 @@ Suppose that a budget of $15,000,000 is given. Purchase gas wells among the 44 c
 - C<sub>i</sub> - monthly operation cost of the i<sup>th</sup> gas well
 - X<sub>i</sub> - decision variable to purchase the i<sup>th</sup> gas well (If purchasing the i<sup>th</sup> gas well: X<sub>i</sub> = 1, if not: X<sub>i</sub> = 0)
 
-## Solution approach
+## Solution Approach
 The wells are divided into **new wells** and **old wells.** New wells do not have data on gas production per month, non-gas production per month and hours operated per month. This data is available in old wells.
 
 Therefore, **regression** is used to predit the monthly average productions of **new wells for the first 6 months** and **exponential smoothing** is used to predict the monthly average productions of **old wells for the last 6 months.**
 
-### New wells
+### <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/New-Wells-Prediction.ipynb">New Wells</a>
 <a href="https://colab.research.google.com/drive/1wg5sLr3LeWGhc4oeIqkiocIT4FMsgHwF?usp=sharing">
     <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
@@ -87,7 +87,7 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
 - `num_iterations=100`
 - `num_leaves=20`
 
-### Old wells
+### <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/Old-Wells-Prediction.ipynb">Old Wells</a>
 <a href="https://colab.research.google.com/drive/1ytvFCquYvnic6fqAoLBGuLcIPTSMg3Eq?usp=sharing">
     <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
