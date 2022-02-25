@@ -13,7 +13,7 @@ A combination of **LightGBM regression** and **Exponential smoothing** is used t
 ## Problem Description
 ### Data
 
-*Unfortunately, the train and exam datasets are confidential and therefore, will not be provided in this repository.*
+***Note:** Unfortunately, the train and exam datasets are confidential and therefore, will not be provided in this repository.*
 
 - **trainSet.csv** - Data of 280 shale gas wells for training models
 - **examSet.csv** - Data of 44 shale gas wells for prediction
@@ -78,7 +78,7 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
 
 `LGBMRegressor` **hyperparameters** after tuning with **Ray Tune** using Grid Search Algorithm:
 
-*(Resources leveraged from **Google Colab:** 2 CPUs, 1 GPU)*
+*Resources leveraged from **Google Colab:** 2 CPUs, 1 GPU.*
 
 - `boosting_type='gbdt'`
 - `learning_rate=0.1`
