@@ -78,8 +78,6 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
 
 `LGBMRegressor` **hyperparameters** after tuning with **Ray Tune** using Grid Search Algorithm:
 
-*Resources leveraged from **Google Colab:** 2 CPUs, 1 GPU.*
-
 - `boosting_type='gbdt'`
 - `learning_rate=0.1`
 - `max_bin=250`
@@ -87,6 +85,8 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
 - `min_data_in_leaf=20`
 - `num_iterations=100`
 - `num_leaves=20`
+
+*Resources leveraged from **Google Colab:** 2 CPUs, 1 GPU.*
 
 ### <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/Old-Wells-Prediction.ipynb">Old Wells</a>
 <a href="https://colab.research.google.com/drive/1ytvFCquYvnic6fqAoLBGuLcIPTSMg3Eq?usp=sharing">
