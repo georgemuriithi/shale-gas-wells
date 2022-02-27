@@ -86,7 +86,7 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
 - `num_iterations=100`
 - `num_leaves=20`
 
-*Resources leveraged from **Google Colab:** 2 CPUs, 1 GPU.*
+***GPU** is leveraged.*
 
 ### <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/Old-Wells-Prediction.ipynb">Old Wells</a>
 <a href="https://colab.research.google.com/drive/1ytvFCquYvnic6fqAoLBGuLcIPTSMg3Eq?usp=sharing">
