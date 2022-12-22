@@ -6,14 +6,14 @@
 
 https://www.datascience-contest.com
 
-The Korea National Oil Corporation is interested in purchasing shale gas wells from the United States, and needs to predict their productions in order to select the wells that maximize profit.
+The Korea National Oil Corporation was interested in purchasing shale gas wells from the United States and wanted to predict their productions to select wells that maximized profit.
 
-A combination of **LightGBM regression** and **Exponential smoothing** is used to predict the productions and Integer programming using **Gurobi** is used for optimization to maximize profit. Performance evaluation is based on **sMAPE (symmetric Mean Absolute Percentage Error).** My team had one of the best performances, having a percentage error of **25.54%,** compared to the best one of **19.49%.**
+A combination of **LightGBM regression** and **Exponential smoothing** was used to predict productions. Integer programming using **Gurobi** was used for optimization to maximize profit. Performance evaluation was based on **sMAPE (symmetric Mean Absolute Percentage Error).** Our team had one of the best performances, having a percentage error of **25.54%,** compared to the best one of **19.49%.**
 
 ## Problem Description
 ### Data
 
-***Note:** Unfortunately, the train and exam datasets are confidential and therefore, will not be provided in this repository.*
+*Unfortunately, the train and exam datasets were confidential. Therefore, they were not included in this repository.*
 
 - **trainSet.csv** - Data of 280 shale gas wells for training models
 - **examSet.csv** - Data of 44 shale gas wells for prediction
