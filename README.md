@@ -58,7 +58,7 @@ Therefore, **regression** was used to predict the monthly average productions of
     <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
 
-After **Feature engineering** and **EDA (Exploratory Data Analysis),** the following **advanced decision tree-based models** for regression are tested:
+After **Feature engineering** and **EDA (Exploratory Data Analysis),** the following **advanced decision tree-based models** for regression were tested:
 
 - `BaggingRegressor`
   - `n_estimators=50`
@@ -74,7 +74,7 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
 
 **Hyperparameter:** `train_test_split(test_size=0.2, random_state=42)`
 
-`LGBMRegressor` turns out as the best performing, with the minimum **sMAPE.**
+`LGBMRegressor` turned out as the best performing, with the minimum **sMAPE.**
 
 `LGBMRegressor` **hyperparameters** after tuning with **Ray Tune** using Grid Search Algorithm:
 
@@ -86,7 +86,7 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
 - `num_iterations=100`
 - `num_leaves=20`
 
-***GPU** is leveraged.*
+***GPU** was leveraged.*
 
 ### <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/Old-Wells-Prediction.ipynb">Old Wells</a>
 <a href="https://colab.research.google.com/drive/1ytvFCquYvnic6fqAoLBGuLcIPTSMg3Eq?usp=sharing">
