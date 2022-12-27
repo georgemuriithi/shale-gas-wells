@@ -109,4 +109,4 @@ The following **exponential smoothing models** were tested:
     - Additive model
     - Damped additive model
 
-Depending on the model with the minimum **SSE (sum of squared error)** for each well, different models were used to forecast different wells.
+Depending on the model with the minimum **SSE (Sum of Squared Error)** for each well, different models were used to forecast different wells.
