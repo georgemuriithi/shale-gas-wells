@@ -19,16 +19,16 @@ A combination of **LightGBM regression** and **Exponential smoothing** was used 
 - **examSet.csv** - Data of 44 shale gas wells for prediction
 
 ### Predicting Gas Production
-Predict the monthly average gas productions of 44 shale gas wells given in **examSet.csv** for the next 6 months.
+The task was to predict the monthly average gas productions of 44 shale gas wells in **examSet.csv** for the next 6 months.
 
-Performance evaluation will be based on **sMAPE (symmetric Mean Absolute Percentage Error):**
+Performance evaluation was based on **sMAPE (symmetric Mean Absolute Percentage Error):**
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/21691211/148675936-b3f0def1-44fa-4d76-a9b4-05bc79049fca.png">
 </p>
 
-- F<sub>i</sub> - predicted monthly average gas production of the i<sup>th</sup> gas well over the next 6 months
-- A<sub>i</sub> - actual monthly average gas production of the i<sup>th</sup> gas well over the next 6 months
+- F<sub>i</sub> - predicted monthly average gas production of i<sup>th</sup> gas well over the next 6 months
+- A<sub>i</sub> - actual monthly average gas production of i<sup>th</sup> gas well over the next 6 months
 - n - number of gas wells (44 in this problem)
 
 ### <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/Investment-Decision.ipynb">Investment Decision</a>
@@ -36,22 +36,22 @@ Performance evaluation will be based on **sMAPE (symmetric Mean Absolute Percent
     <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
 
-Suppose that a budget of $15,000,000 is given. Purchase gas wells among the 44 candidates given in **examSet.csv** to maximize profit.
+A budget of $15,000,000 was given. The task was to select gas wells among the 44 candidates to maximise profit after predicting their monthly average gas productions.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/21691211/148675948-b08621d8-68cf-4fa3-82a5-467c3b973347.png">
 </p>
 
-- A<sub>i</sub> - actual monthly average gas production of the i<sup>th</sup> gas well over the next 6 months
-- P<sub>i</sub> - price of the i<sup>th</sup> gas well
+- A<sub>i</sub> - actual monthly average gas production of i<sup>th</sup> gas well over the next 6 months
+- P<sub>i</sub> - price of i<sup>th</sup> gas well
 - P<sub>s</sub> - shale gas price ($5 per 1 Mcf)
-- C<sub>i</sub> - monthly operation cost of the i<sup>th</sup> gas well
-- X<sub>i</sub> - decision variable to purchase the i<sup>th</sup> gas well (If purchasing the i<sup>th</sup> gas well: X<sub>i</sub> = 1, if not: X<sub>i</sub> = 0)
+- C<sub>i</sub> - monthly operation cost of i<sup>th</sup> gas well
+- X<sub>i</sub> - decision variable to purchase i<sup>th</sup> gas well (if purchasing i<sup>th</sup> gas well: X<sub>i</sub> = 1, else: X<sub>i</sub> = 0)
 
 ## Solution Approach
-The wells are divided into **new wells** and **old wells.** New wells do not have data on gas production per month, non-gas production per month and hours operated per month. This data is available in old wells.
+The wells were divided into **new wells** and **old wells.** New wells did not have data on gas production, non-gas production and hours operated per month. This data was available for old wells.
 
-Therefore, **regression** is used to predit the monthly average productions of **new wells for the first 6 months** and **exponential smoothing** is used to predict the monthly average productions of **old wells for the last 6 months.**
+Therefore, **regression** was used to predict the monthly average productions of **new wells for the first 6 months**, and **exponential smoothing** was used to predict the monthly average productions of **old wells for the last 6 months.**
 
 ### <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/New-Wells-Prediction.ipynb">New Wells</a>
 <a href="https://colab.research.google.com/drive/1wg5sLr3LeWGhc4oeIqkiocIT4FMsgHwF?usp=sharing">
