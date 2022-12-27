@@ -93,7 +93,7 @@ After **Feature engineering** and **EDA (Exploratory Data Analysis),** the follo
     <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
 
-The following **exponential smoothing models** are tested:
+The following **exponential smoothing models** were tested:
 
 - `SimpleExpSmoothing`
   - `smoothing_level=0.2`
@@ -109,4 +109,4 @@ The following **exponential smoothing models** are tested:
     - Additive model
     - Damped additive model
 
-Depending on the model with the minimum **SSE (sum of squared error)** for each well, different models are used to forecast different wells.
+Depending on the model with the minimum **SSE (sum of squared error)** for each well, different models were used to forecast different wells.
