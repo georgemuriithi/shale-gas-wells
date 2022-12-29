@@ -55,7 +55,7 @@ Therefore, **regression** was used to predict the monthly average productions of
     <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
 
-After **Feature engineering** and **EDA (Exploratory Data Analysis),** the following **advanced decision tree-based models** for regression were tested:
+After **Feature engineering** and **EDA (Exploratory Data Analysis),** the following **advanced decision tree-based models** for **regression** were tested:
 
 - `BaggingRegressor`
   - `n_estimators=50`
