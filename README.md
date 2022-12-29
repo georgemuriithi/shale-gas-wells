@@ -8,7 +8,7 @@ https://www.datascience-contest.com
 
 The Korea National Oil Corporation was interested in purchasing shale gas wells from the United States and wanted to predict their productions to select wells that maximized profit.
 
-A combination of **LightGBM regression** and **Exponential smoothing** was used to predict productions. Integer programming using **Gurobi** was used for optimization to maximize profit. Performance evaluation was based on **sMAPE (symmetric Mean Absolute Percentage Error).** Our team had one of the best performances, having a percentage error of **25.54%,** compared to the best one of **19.49%.**
+A combination of **LightGBM regression** and **Exponential smoothing** was used to predict productions. 0-1 integer programming using **Gurobi** was used for optimization to maximize profit. Performance evaluation was based on **sMAPE (symmetric Mean Absolute Percentage Error).** Our team had one of the best performances, having a percentage error of **25.54%,** compared to the best one of **19.49%.**
 
 ## Problem Description
 ### Data
@@ -31,12 +31,9 @@ Performance evaluation was based on **sMAPE (symmetric Mean Absolute Percentage 
 - A<sub>i</sub> - actual monthly average gas production of i<sup>th</sup> gas well over the next 6 months
 - n - number of gas wells (44 in this problem)
 
-### <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/Investment-Decision.ipynb">Investment Decision</a>
-<a href="https://colab.research.google.com/drive/1aFY-WH7U4QJpItl5yXOoEvJC0_t06hDn?usp=sharing">
-    <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
-</a>
+### Investment Decision
 
-A budget of $15,000,000 was given. The task was to select gas wells among the 44 candidates to maximise profit after predicting their monthly average gas productions.
+A budget of $15,000,000 was given. The task was to select gas wells among the 44 candidates to maximise profit after predicting their monthly average gas productions:
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/21691211/148675948-b08621d8-68cf-4fa3-82a5-467c3b973347.png">
@@ -110,3 +107,14 @@ The following **exponential smoothing models** were tested:
     - Damped additive model
 
 Depending on the model with the minimum **SSE (Sum of Squared Error)** for each well, different models were used to forecast different wells.
+
+### <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/Investment-Decision.ipynb">Investment Decision</a>
+<a href="https://colab.research.google.com/drive/1aFY-WH7U4QJpItl5yXOoEvJC0_t06hDn?usp=sharing">
+    <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
+</a>
+
+The following 0-1 integer programming model was used:
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/21691211/209959598-f4f64642-4fe1-4423-a421-824da4195b66.png">
+</p>
