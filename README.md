@@ -1,4 +1,4 @@
-# Shale Gas Wells Production Prediction
+# Shale Gas Wells Productions Prediction
 
 <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/LICENSE">
     <img alt="License" src="https://img.shields.io/github/license/georgemuriithi/shale-gas-wells.svg?color=blue&cachedrop">
@@ -6,7 +6,7 @@
 
 https://www.datascience-contest.com
 
-The <a href="https://www.knoc.co.kr/ENG/main.jsp">Korea National Oil Corporation</a> was interested in purchasing shale gas wells from the United States and wanted to predict their production to select wells that maximize profit.
+The <a href="https://www.knoc.co.kr/ENG/main.jsp">Korea National Oil Corporation</a> was interested in purchasing shale gas wells from the United States and wanted to predict their productions to select wells that maximize profit.
 
 A combination of **LightGBM regression** and **Exponential smoothing** is used to predict productions. 0-1 integer programming using **Gurobi** is used for optimization to maximize profit. Performance evaluation is based on **sMAPE (symmetric Mean Absolute Percentage Error).** Our team has one of the best performances, having a percentage error of **25.54%,** compared to the best one of **19.49%.**
 
@@ -33,7 +33,7 @@ Performance evaluation is based on **sMAPE (symmetric Mean Absolute Percentage E
 
 ### Investment Decision
 
-A budget of $15,000,000 is given. The task is to select gas wells among the 44 candidates to maximize profit after predicting their monthly average gas productions:
+A budget of $15,000,000 is allocated. The task is to select gas wells among the 44 wells to maximize profit after predicting their monthly average gas productions:
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/21691211/148675948-b08621d8-68cf-4fa3-82a5-467c3b973347.png">
@@ -55,7 +55,7 @@ Therefore, **regression** is used to predict the monthly average productions of 
     <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
 
-After **Feature engineering** and **EDA (Exploratory Data Analysis),** the following **advanced decision tree-based models** for **regression** are tested:
+After **EDA (Exploratory Data Analysis)** and **Feature engineering,** the following **advanced decision tree-based models** for **regression** are tested:
 
 - `BaggingRegressor`
   - `n_estimators=50`
