@@ -1,4 +1,4 @@
-# Shale Gas Wells Productions Prediction
+# Shale Gas Well Productions Prediction
 
 <a href="https://github.com/georgemuriithi/shale-gas-wells/blob/main/LICENSE">
     <img alt="License" src="https://img.shields.io/github/license/georgemuriithi/shale-gas-wells.svg?color=blue&cachedrop">
